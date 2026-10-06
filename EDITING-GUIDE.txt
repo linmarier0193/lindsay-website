@@ -1,0 +1,30 @@
+IMAGE & EYES — QUICK EDITING GUIDE
+
+The site is now organized so each project has its own folder.
+
+PROJECT EXAMPLE:
+projects/stable/
+    index.html
+    hero.jpg
+    process-1.jpg
+    process-2.jpg
+    final.jpg
+    README.txt
+
+To update a project:
+1. Replace the JPG files with your own photos. Keep the same filenames.
+2. Open that project's index.html in a text editor.
+3. Replace the placeholder paragraphs and captions.
+4. You do NOT need to edit the CSS just to change photos or text.
+
+The homepage Projects gallery is projects-gallery.png. It is the collage you provided.
+The clickable hotspots on that image link to each project's folder.
+
+For Hobbies, Design, and Event Planning:
+Each item has its own folder with hero.jpg and gallery-1.jpg / gallery-2.jpg.
+
+If you want to add more images to a page later, copy one of the existing <figure class="process-photo"> blocks in index.html and change the image filename.
+
+HOME:
+about-me.png = homepage background
+projects-gallery.png = Projects scrapbook collage
