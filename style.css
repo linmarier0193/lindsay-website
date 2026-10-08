@@ -214,18 +214,13 @@ body{margin:0;background:#e9e5dc;color:#173b52;font-family:Georgia,"Times New Ro
 }
 
 .side-image {
-  height: 300px;
+  width: 800px;
+  aspect-ratio: 1616 / 1080;
   display: grid;
   place-items: center;
-  border: 8px solid #f7f4eb;
+  border: 20px solid #fffdf8;
   position: relative;
   overflow: hidden;
-}
-
-.side-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* Mobile */
