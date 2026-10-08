@@ -5,10 +5,63 @@ body{margin:0;background:#e9e5dc;color:#173b52;font-family:Georgia,"Times New Ro
 .navbar{max-width:1150px;margin:auto;display:flex;justify-content:center;gap:3px;padding:8px;background:rgba(13,43,64,.97);border-radius:999px;box-shadow:0 8px 28px #081b2838;backdrop-filter:blur(10px)}
 .nav-link{padding:10px 16px;color:#f5f5f5;text-decoration:none;text-transform:lowercase;font-size:13px;letter-spacing:.055em;border-radius:999px;transition:.18s}
 .nav-link:hover,.nav-link.active{background:#ffffff22;color:white}
-.home{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden}
-.background-art{position:absolute;inset:0;background:url("about-me.png") center/cover no-repeat}
-.home:after{content:"";position:absolute;inset:0;background:linear-gradient(#fff0,#fff0 70%,#0f27350d);pointer-events:none}
-.enter-button{position:relative;z-index:2;margin-top:52vh;display:inline-block;padding:12px 30px;border:1px solid #1c577caa;border-radius:999px;background:#f5f4efdd;color:#1d628c;text-decoration:none;letter-spacing:.16em;text-transform:uppercase;font-size:12px}
+.home {
+  width: 100%; 
+  
+  /* 1. MATCHES YOUR 1366x881 DIMENSIONS PERFECTLY */
+  aspect-ratio: 1366 / 881; 
+  
+  position: relative;
+  overflow: hidden; 
+}
+
+.home:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#fff0, #fff0 70%, #0f27350d);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.enter-button {
+  position: absolute; 
+  z-index: 2;
+  
+  /* 2. CENTERS HORIZONTALLY */
+  left: 50%;
+  
+  /* 3. SETS VERTICAL POSITION ON THE IMAGE CANVAS */
+  top: 65%; /* Change this percentage to move the button up or down over your art */
+  
+  transform: translate(-50%, -50%); /* Ensures the center point of the button aligns with coordinates */
+  
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #1c577caa;
+  border-radius: 999px;
+  background: #f5f4efdd;
+  color: #1d628c;
+  text-decoration: none;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-size: 12px;
+  white-space: nowrap; 
+}
+
+.background-art {
+  position: absolute;
+  inset: 0; 
+  width: 100%;
+  height: 100%;
+  background-image: url("about-me.png");
+  
+  /* 4. PRESERVES ASPECT RATIO WITH NO EMPTY CONTAINER SPACE */
+  background-size: 100% 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 .scrapbook-section{padding:110px 5vw;background:radial-gradient(circle at 12% 20%,#1d628c12 0 2px,transparent 3px),radial-gradient(circle at 85% 70%,#1d628c10 0 1px,transparent 2px),#e9e5dc;background-size:34px 34px,41px 41px,auto}
 .alt{background-color:#f1eee7}
 .projects-paper{
