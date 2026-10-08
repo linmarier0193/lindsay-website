@@ -81,7 +81,6 @@ body{margin:0;background:#e9e5dc;color:#173b52;font-family:Georgia,"Times New Ro
     position: relative;
     width: min(90vw, 900px);
     margin-top: 30px;
-    margin-left: calc((100vw - min(90vw, 900px)) / 2);
 }
 
 .project-gallery > img {
